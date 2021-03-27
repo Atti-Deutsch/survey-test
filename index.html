@@ -9,13 +9,11 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
- 
     <div class="container">
       <header class="header">
-        <h1 id="title">freeCodeCamp Survey</h1>
-        <p id="description">Thank you for taking the time to help us improve the platform</p>
+        <h1 id="title" class="text-center">freeCodeCamp Survey</h1>
+        <p id="description" class="text-center">Thank you for taking the time to help us improve the platform</p>
       </header>
-
       <form id="survey-form">
         <div class="form-group">
           <label id="name-label" for="name">Enter your name</label>
@@ -27,7 +25,7 @@
         </div>
         <div class="form-group">
           <label id="number-label" for="age">Enter your Age</label>
-          <input type="number" name="age" id="age" class="form-control" placeholder="Enter your age" requered /> 
+          <input type="number" name="age" id="age" class="form-control" min="1" max="100" placeholder="Enter your age" requered /> 
         </div>
         <div class="form-group">
           <p>Which option best describes your current role?</p>
@@ -63,7 +61,7 @@
       </div>
       <div class="form-group">
         <p>What is your favorite feature of freeCodeCamp?
-          <span>(Check all that apply)</span></p>
+          <span class="clue">(Check all that apply)</span></p>
           <label>
             <input type="checkbox" class="input-checkbox" name="user-prefer" value="back-end-projects" />Back-end Projects
           </label>
